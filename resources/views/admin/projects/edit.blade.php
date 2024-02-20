@@ -18,6 +18,10 @@
                   <input type="text" class="form-control" id="author" name="author" value="{{old('author', $project->author)}}">
                 </div>
                 <div class="form-group mb-3">
+                  <label for="type_id">Type_id</label>
+                  <input type="number" min="1" max="3" class="form-control" id="type_id" name="type_id" value="{{old('type_id', $project->type_id)}}">
+                </div>
+                <div class="form-group mb-3">
                     <label for="proj_image">URL image</label>
                     <input type="text" class="form-control" id="proj_image" name="proj_image" value="{{old('proj_image', $project->proj_image)}}">
                 </div>
