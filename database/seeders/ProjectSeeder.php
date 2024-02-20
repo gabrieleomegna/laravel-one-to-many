@@ -19,7 +19,7 @@ class ProjectSeeder extends Seeder
             $newProject = new Project();
             $newProject->title = $project['title'];
             $newProject->author = $project['author'];
-            $newProject->type_id = $project['type_id'];
+            isset($project['type_id']) ? $newProject->type_id = $project['type_id'] : $newProject->type_id = NULL;
             $newProject->proj_image = $project['image'];
             $newProject->description = $project['description'];
             $newProject->start_date = $project['start_date'];
