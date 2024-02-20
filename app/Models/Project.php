@@ -18,4 +18,7 @@ class Project extends Model
         'completion_date',
         'no_days_taken',
     ];
+    public function type() {
+        return $this->belongsTo(Type::class);
+    }
 }
